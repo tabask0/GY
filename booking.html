@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <script src="https://cdn.tailwindcss.com/3.2.4"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+    />
+
+    <title>Global Yachting Croatia</title>
+    <!--
+TemplateMo 548 Training Studio
+https://templatemo.com/tm-548-training-studio
+-->
+
+    <!-- Additional CSS Files -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+
+    <link rel="stylesheet" href="assets/css/waves.css" />
+  </head>
+  <body>
+    <div class="header-area shadow mb-5 bg-white rounded">
+      <div class="container">
+        <nav class="main-nav d-flex justify-content-around">
+          <a style="background-color: gray" href="index.html" class="logo"
+            >Global<em> Yachting</em></a
+          >
+
+          <h4 class="nav">Make a Booking</h4>
+          <p class="nav">Contact Us</p>
+        </nav>
+      </div>
+    </div>
+    <div class="container mt-32 mx-auto" style="width: 90%">
+      <div class="row justify-content-center">
+        <span
+          id="step-week"
+          class="p-4 border-bottom border-bottom-5 border-sky-500 border-primary"
+        >
+          Week
+        </span>
+        <span
+          id="step-category"
+          class="p-4 border-bottom border-bottom-5 border-sky-500"
+        >
+          Category
+        </span>
+        <span
+          id="step-crew"
+          class="p-4 border-bottom border-bottom-5 border-sky-500"
+          >Crew</span
+        >
+        <span
+          id="step-confirm"
+          class="p-4 border-bottom border-bottom-5 border-sky-500"
+        >
+          Confirm
+        </span>
+      </div>
+    </div>
+
+    <div class="container mt-20 justify-content-center">
+      <span class="d-flex justify-content-center text-center mx-auto my-auto">
+        You are sailing in
+        <b class="bold ml-1"> Croatia 🇭🇷</b>
+      </span>
+    </div>
+
+    <div
+      id="week-container"
+      class="container col mt-32 justify-content-center shadow p-3 mb-5 bg-white rounded"
+      style="width: 800px"
+    >
+      <div class="container m-0">
+        <div class="col border border-top-0 border-left-0 border-right-0">
+          <div>
+            <span style="font-size: 34px; color: #00b1ab">&#x2022;</span>
+            <span style="font-size: 34px; color: #eec2a7">&#x2022;</span>
+            <span style="font-size: 34px; color: #0084fe">&#x2022;</span>
+            <span style="font-size: 34px; color: #b790b0">&#x2022;</span>
+            <span style="font-size: 34px; color: #333333">&#x2022;</span>
+          </div>
+          <h1 class="mb-6 mt-2">1 May - 7 May 2023</h1>
+          <div class="d-flex justify-content-between">
+            <p class="mb-4">Week 1 from 1070€/person</p>
+            <i
+              style="cursor: pointer"
+              id="icon1"
+              class="fa-solid fa-arrow-right"
+            ></i>
+          </div>
+          <div
+            id="week1"
+            style="display: none"
+            class="container row flex-nowrap"
+          >
+            <div>
+              <h1 style="color: #00b1ab" class="col-1 font-weight-bolder">
+                Classic <span>Monohull</span>
+              </h1>
+              <p class="row ml-3">2 Yachts</p>
+              <p class="row ml-3">3+ Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+            <div>
+              <h1 style="color: #eec1a6" class="col-1 font-weight-bolder">
+                Classic <span>Catamaran</span>
+              </h1>
+              <p class="row ml-3">3 Yachts</p>
+              <p class="row ml-3">3+ Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+            <div>
+              <h1 style="color: #0084fe" class="col-1 font-weight-bolder">
+                Premium <span>Monohull</span>
+              </h1>
+              <p class="row ml-3">3 Yachts</p>
+              <p class="row ml-3">3+ Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+            <div>
+              <h1 style="color: #b790b0" class="col-1 font-weight-bolder">
+                Premium <span>Catamaran</span>
+              </h1>
+              <p class="row ml-3">2 Yachts</p>
+              <p class="row ml-3">3 Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+          </div>
+          <button
+            id="week1-btn"
+            class="btn btn-primary w-full mt-4 mb-3"
+            style="display: none"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+      <div class="container m-0">
+        <div class="col border border-top-0 border-left-0 border-right-0">
+          <div>
+            <span style="font-size: 34px; color: #00b1ab">&#x2022;</span>
+            <span style="font-size: 34px; color: #eec2a7">&#x2022;</span>
+            <span style="font-size: 34px; color: #0084fe">&#x2022;</span>
+            <span style="font-size: 34px; color: #b790b0">&#x2022;</span>
+            <span style="font-size: 34px; color: #333333">&#x2022;</span>
+          </div>
+          <h1 class="mb-6 mt-2">1 May - 7 May 2023</h1>
+          <div class="d-flex justify-content-between">
+            <p class="mb-4">Week 1 from 1070€/person</p>
+            <i
+              style="cursor: pointer"
+              id="icon2"
+              class="fa-solid fa-arrow-right"
+            ></i>
+          </div>
+          <div
+            id="week2"
+            style="display: none"
+            class="container row flex-nowrap"
+          >
+            <div>
+              <h1 style="color: #00b1ab" class="col-1 font-weight-bolder">
+                Classic <span>Monohull</span>
+              </h1>
+              <p class="row ml-3">2 Yachts</p>
+              <p class="row ml-3">3+ Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+            <div>
+              <h1 style="color: #eec1a6" class="col-1 font-weight-bolder">
+                Classic <span>Catamaran</span>
+              </h1>
+              <p class="row ml-3">3 Yachts</p>
+              <p class="row ml-3">3+ Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+            <div>
+              <h1 style="color: #0084fe" class="col-1 font-weight-bolder">
+                Premium <span>Monohull</span>
+              </h1>
+              <p class="row ml-3">3 Yachts</p>
+              <p class="row ml-3">3+ Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+            <div>
+              <h1 style="color: #b790b0" class="col-1 font-weight-bolder">
+                Premium <span>Catamaran</span>
+              </h1>
+              <p class="row ml-3">2 Yachts</p>
+              <p class="row ml-3">3 Cabins</p>
+              <p class="row ml-3">-</p>
+            </div>
+          </div>
+          <button
+            id="week2-btn"
+            class="btn btn-primary w-full mt-4 mb-3"
+            style="display: none"
+          >
+            Select
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div
+      id="categoryContainer"
+      style="display: none"
+      class="container row justify-content-center mx-auto mt-20"
+    >
+      <div
+        class="card m-4 shadow p-3 mb-5 bg-white rounded"
+        style="width: 18rem"
+      >
+        <img src="assets/images/slide-01.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 style="color: #00b1ab" class="card-title mt-2">
+            Classic Monohull
+          </h5>
+          <p class="card-text mb-md-4 font-weight-bold">From: €1,048/person</p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Type: 44 - 51ft Monohull
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Age: 2013 - 2023
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Capacity 8 (4 cabins)
+          </p>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">
+              Air Conditioning
+            </p>
+            <i
+              style="font-size: 10px; color: #dd2726"
+              class="fa-solid fa-x mt-3"
+            ></i>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">Skipper</p>
+            <i
+              style="font-size: 10px; color: #45db5d"
+              class="fa-solid fa-check mt-3"
+            ></i>
+          </div>
+          <a href="#" class="btn btn-primary w-full mt-4 font-weight-bolder"
+            >Select</a
+          >
+        </div>
+      </div>
+      <div
+        class="card m-4 shadow p-3 mb-5 bg-white rounded"
+        style="width: 18rem"
+      >
+        <img src="assets/images/slide-01.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 style="color: #eec2a7" class="card-title mt-2">
+            Classic Catamaran
+          </h5>
+          <p class="card-text mb-md-4 font-weight-bold">From: €1,048/person</p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Type: 44 - 51ft Monohull
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Age: 2013 - 2023
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Capacity 8 (4 cabins)
+          </p>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">
+              Air Conditioning
+            </p>
+            <i
+              style="font-size: 10px; color: #dd2726"
+              class="fa-solid fa-x mt-3"
+            ></i>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">Skipper</p>
+            <i
+              style="font-size: 10px; color: #45db5d"
+              class="fa-solid fa-check mt-3"
+            ></i>
+          </div>
+          <a href="#" class="btn btn-primary w-full mt-4 font-weight-bolder"
+            >Select</a
+          >
+        </div>
+      </div>
+      <div
+        class="card m-4 shadow p-3 mb-5 bg-white rounded"
+        style="width: 18rem"
+      >
+        <img
+          src="assets/images/slide-01.jpg"
+          class="card-img-top w-full"
+          alt="..."
+        />
+        <div class="card-body">
+          <h5 style="color: #0084fe" class="card-title mt-2">
+            Premium Monohull
+          </h5>
+          <p class="card-text mb-md-4 font-weight-bold">From: €1,048/person</p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Type: 44 - 51ft Monohull
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Age: 2013 - 2023
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Capacity 8 (4 cabins)
+          </p>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">
+              Air Conditioning
+            </p>
+            <i
+              style="font-size: 10px; color: #45db5d"
+              class="fa-solid fa-x mt-3"
+            ></i>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">Skipper</p>
+            <i
+              style="font-size: 10px; color: #45db5d"
+              class="fa-solid fa-check mt-3"
+            ></i>
+          </div>
+
+          <a href="#" class="btn btn-primary w-full mt-4 font-weight-bolder"
+            >Select</a
+          >
+        </div>
+      </div>
+      <div
+        class="card m-4 shadow p-3 mb-5 bg-white rounded"
+        style="width: 18rem"
+      >
+        <img src="assets/images/slide-01.jpg" class="card-img-top" alt="..." />
+        <div class="card-body">
+          <h5 style="color: #b790b0" class="card-title mt-2">
+            Premium Catamaran
+          </h5>
+          <p class="card-text mb-md-4 font-weight-bold">From: €1,048/person</p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Type: 44 - 51ft Monohull
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Yacht Age: 2013 - 2023
+          </p>
+          <p class="card-text mt-2 text-body font-weight-normal">
+            Capacity 8 (4 cabins)
+          </p>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">
+              Air Conditioning
+            </p>
+            <i
+              style="font-size: 10px; color: #45db5d"
+              class="fa-solid fa-x mt-3"
+            ></i>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="card-text mt-2 text-body font-weight-normal">Skipper</p>
+            <i
+              style="font-size: 10px; color: #45db5d"
+              class="fa-solid fa-check mt-3"
+            ></i>
+          </div>
+          <a href="#" class="btn btn-primary w-full mt-4 font-weight-bolder"
+            >Select</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/bootstrap.js"></script>
+    <script src="assets/js/booking.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.js"
+      integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      $("#icon1").on("click", function () {
+        if ($("#week1").css("display") === "none") {
+          $("#week1").css("display", "flex");
+          $("#icon1").removeClass("fa-arrow-right");
+          $("#icon1").addClass("fa-arrow-down");
+          $("#week1-btn").css("display", "block");
+        } else {
+          $("#week1").css("display", "none");
+          $("#icon1").removeClass("fa-arrow-down");
+          $("#icon1").addClass("fa-arrow-right");
+          $("#week1-btn").css("display", "none");
+        }
+      });
+      $("#icon2").on("click", function () {
+        if ($("#week2").css("display") === "none") {
+          $("#week2").css("display", "flex");
+          $("#icon2").removeClass("fa-arrow-right");
+          $("#icon2").addClass("fa-arrow-down");
+          $("#week2-btn").css("display", "block");
+        } else {
+          $("#week2").css("display", "none");
+          $("#icon2").removeClass("fa-arrow-down");
+          $("#icon2").addClass("fa-arrow-right");
+          $("#week2-btn").css("display", "none");
+        }
+      });
+
+      $("#week1-btn").on("click", function () {
+        $("#step-week").removeClass("border-primary");
+        $("#step-category").addClass("border-primary");
+        $("#week-container").css("display", "none");
+        $("#categoryContainer").css("display", "flex");
+      });
+    </script>
+  </body>
+</html>
